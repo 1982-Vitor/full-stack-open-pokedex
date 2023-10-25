@@ -17,3 +17,5 @@ jobs:
       - name: Say hello
         run: |
           echo "Hello World!"
+
+          if: ${{ github.event_name == 'push' }}
